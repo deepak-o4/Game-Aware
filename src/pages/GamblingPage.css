@@ -1,0 +1,79 @@
+/* Dark theme for Gambling Page */
+.gambling-page {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    background: #121212;
+    color: white;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+  }
+  
+  /* Individual slide styling */
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    height: 100vh;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Alternate background gradients */
+  .slide:nth-child(even) {
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+  }
+  
+  .slide-content {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .slide-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+  }
+  
+  .slide-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d3d3d3;
+    text-align: justify;
+  }
+  
+  /* Image Styling */
+  .slide-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .slide-content {
+      padding: 15px;
+    }
+  
+    .slide-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .slide-content p {
+      font-size: 1rem;
+    }
+  }
+  

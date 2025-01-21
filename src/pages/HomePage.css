@@ -1,0 +1,328 @@
+/* General Page Styling */
+.homepage {
+    background: #121212;
+    color: white;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Banner Section */
+  .banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #6be6ff, #00c8ff);
+    color: white;
+    border: 20px solid #121212;
+    border-radius: 35px;
+  }
+  
+  .banner .logo {
+    height: auto;
+    width: 550px;
+    border: 7px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: gold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    font-style: oblique;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Explore More Section */
+  .explore-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #c1c0bf, #3a3a3a); /* Dark to light gradient */
+    color: white;
+    border: 20px solid #121212;
+    border-radius: 35px;
+  }
+  
+  
+  .explore-section h2 {
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+  }
+  img {
+    margin-top: 30px;
+    height: auto;
+    width: 40%;
+    border-radius: 25px;
+  }
+
+  .buttons .btn {
+    text-decoration: none;
+    background: #03dac6;
+    color: #121212;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons .btn:hover {
+    background-color: #03a499;
+  }
+  
+  /* About Us Section */
+.about-us-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(120deg, #1f1f1f, #0d1117); /* Dark Gradient Background */
+    color: white;
+    border: 20px solid #121212;
+    border-radius: 35px;
+  }
+  
+  .about-us-section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ffc107;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* About Content - Text and Images */
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* About Text */
+  .about-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 600px;
+  }
+  
+  .about-text p {
+    margin-bottom: 20px;
+  }
+  
+  /* About Images */
+  .about-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-image {
+    height: auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .btn {
+    background-color: #03dac6;
+    color: #121212;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  
+    .about-images img {
+      max-width: 100%;
+    }
+  }
+
+
+  
+  /* Reason for Development Section */
+.reason-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #3f3e3d, #feb47b); /* Gradient Background */
+    color: white;
+    border: 20px solid #121212;
+    border-radius: 35px;
+  }
+  
+  .reason-section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ffc107;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .reason-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .reason-section p:last-child {
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .reason-section h2 {
+      font-size: 2.5rem;
+    }
+  
+    .reason-section p {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  /* Contact Us Section */
+  .contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1e1e2f;
+    color: white;
+    border: 20px solid #121212;
+    border-radius: 35px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background: #03dac6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #03a499;
+  }
+  
+  /* Credits Section */
+  .credits-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #0d1117;
+    color: white;
+    border: 20px solid #121212;
+    border-radius: 35px;
+  }
+  
+  .credits-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .credits-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0d1117;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer .footer-content p {
+    margin: 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .explore-section h2 {
+      font-size: 2rem;
+    }
+  
+    .buttons .btn {
+      font-size: 1rem;
+    }
+  
+    .about-us-section p,
+    .reason-section p,
+    .credits-section p {
+      font-size: 1rem;
+    }
+  }
+  

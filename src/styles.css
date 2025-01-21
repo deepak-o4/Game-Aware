@@ -1,0 +1,83 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent; /* Transparent background */
+  position: sticky;
+  z-index: 1000;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for contrast */
+}
+
+/* Logo Styling */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-img {
+  width: 250px; /* Adjust logo size */
+  height: auto;
+  object-fit: contain; /* Ensure logo scales well */
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 1.1rem;
+}
+
+.nav-links .nav-link {
+  text-decoration: none;
+  color: rgb(243, 158, 23); /* White text color for links */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+  background-color: #ec9018; /* Teal color when hovered */
+  color: #141414; /* Dark color for text on hover */
+}
+
+/* Optional: Adds a gradient background on scroll for better contrast */
+.navbar.scrolled {
+  background: linear-gradient(120deg, #0d1117, #3a3a3a);
+  transition: background 0.3s ease;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide menu on mobile */
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .navbar .logo {
+    flex-direction: column;
+  }
+
+  .navbar .logo-img {
+    width: 100px; /* Smaller logo on mobile */
+  }
+
+  .navbar.scrolled .nav-links {
+    display: block; /* Show menu when scrolled */
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+}
